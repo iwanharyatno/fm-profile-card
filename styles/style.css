@@ -2,11 +2,128 @@
 
 :root {
   --color-bg: hsl(185, 75%, 39%);
+  --color-text: hsl(229, 23%, 23%);
+  --color-text-gray: hsl(0, 0%, 59%);
 }
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
-  padding: 1rem;
+  font-size: 18px;
+  padding: 1.5rem;
   margin: 0;
   background-color: var(--color-bg);
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid hsl(0, 0%, 89%);
+}
+
+.profile-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  color: var(--color-text);
+  box-shadow: 0 1rem 4rem -1.5rem rgba(0, 0, 0, 0.5);
+  max-width: 30rem;
+  margin: auto;
+}
+
+.profile-header-image {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.profile-picture {
+  position: relative;
+  border-radius: 50%;
+  border: 7px solid #fff;
+  width: 7rem;
+  height: 7rem;
+  display: block;
+  margin: auto;
+  margin-top: -4.3rem;
+  z-index: 2;
+}
+
+.profile-person,
+.profile-city {
+  text-align: center;
+}
+
+.profile-city {
+  margin-top: 0.7rem;
+  color: var(--color-text-gray);
+  margin-bottom: 1.5rem;
+}
+
+.profile-name,
+.profile-age {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.profile-age {
+  font-weight: normal;
+  color: var(--color-text-gray);
+  margin-left: 0.4rem;
+}
+
+.profile-stats {
+  display: flex;
+  padding: 1.5rem;
+}
+
+.profile-stat {
+  width: 33.33%;
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.stat-name {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: var(--color-text-gray);
+}
+
+.pattern-top {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -100%);
+}
+
+.bg-decor {
+  width: 0;
+  height: 0;
+}
+
+.pattern-bottom {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.center {
+  margin-top: calc(50vh - 3rem - 50%);
+}
+
+@media screen and (min-width: 768px) {
+  .center {
+    margin-top: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
