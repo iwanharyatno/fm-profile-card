@@ -34,7 +34,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### What I learned
 
-After I worked on this project, I've learned on how to hide the overflowing content of absolute positioned element, especially if the overflow occurs on right and bottom side of the viewport.
+After I've worked on this project, I've learned on how to hide the overflowing content of absolute positioned element, especially if the overflow occurs on right and bottom side of the viewport.
 
 Here's how I do it.
 
